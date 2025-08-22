@@ -11,15 +11,15 @@ export default function About(){
             <p>Founded on the principle of financial freedom, the Manilla Pay app brings the power of digital assets to everyday transactions. Whether you’re paying your utility bills or booking a vacation, we make it frictionless, fast, and future-proof.</p>
           </div>
           <div className="grid lg:grid-cols-3 gap-6 my-4">
-            <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl from-[#8183C2] to-[#1C1E6C]">
+            <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl hover:from-[#979797] hover:to-[#222222] cursor-pointer from-[#8183C2] to-[#1C1E6C]">
               <p className="text-lg font-semibold">Our Mission</p>
               <p>To empower Canadians with tools that give them more control, more flexibility, and more transparency in how they spend, save, and pay - all powered by the blockchain.</p>
             </div>
-            <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl from-[#8183C2] to-[#1C1E6C]">
+            <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl hover:from-[#979797] hover:to-[#222222] cursor-pointer from-[#8183C2] to-[#1C1E6C]">
               <p className="text-lg font-semibold">Our Promise</p>
               <p>TWe are committed to compliance, security, and service excellence while bringing cutting-edge technology to traditional services, with human support that cares.</p>
             </div>
-            <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl from-[#8183C2] to-[#1C1E6C]">
+            <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl hover:from-[#979797] hover:to-[#222222] cursor-pointer from-[#8183C2] to-[#1C1E6C]">
               <p className="text-lg font-semibold">Backed by Global Experience</p>
               <p>Manilla is trusted by thousands across Africa and now proudly expanding into Canada. The Manilla team is experienced, reliable, and ready to challenge the status quo. </p>
             </div>

@@ -55,7 +55,7 @@ export default function(){
                                 <p className="text-sm mb-[6px]">How can we help?</p>
                                 <textarea className="border h-32 rounded-lg w-full border-[#D0D5DD] px-4 py-3 placeholder:text-[#667085]" placeholder="Tell us a little about the project..." />
                             </div>
-                            <button className="mt-2 w-full bg-gradient-to-r text-xs lg:text-base from-[#0005CA] to-[#040786] text-white h-10 lg:h-16 font-semibold rounded-4xl">Get Started</button>
+                            <button className="mt-2 w-full bg-gradient-to-r text-xs lg:text-base hover:from-[#2b2b2b] hover:to-[#000000] from-[#0005CA] to-[#040786] text-white h-10 lg:h-16 font-semibold rounded-4xl">Get Started</button>
                         </form>
                     </div>
                     <div className="lg:hidden">

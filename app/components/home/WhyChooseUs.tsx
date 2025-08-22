@@ -40,9 +40,9 @@ export default function WhyChooseUs(){
             </ul>
             <p className="font-bold text-[#040786]">Built for Canadian lifestyles. Engineered for the blockchain generation.</p>
             <div className="mt-10 flex items-center gap-x-4">
-              <p className="font-semibold">Play video To <br />Learn More</p>
-              <div className="bg-gradient-to-r h-16 gap-x-4 text-white from-[#0005CA] to-[#040786] items-center flex lg:flex-1 rounded-4xl p-4">
-                <div className="flex gap-x-4 items-center">
+              <p className="font-semibold text-xs lg:text-base">Play video To <br />Learn More</p>
+              <div className="bg-gradient-to-r h-16 cursor-pointer gap-x-4 text-white hover:from-[#2B2B2B] hover:to-[#000000] transition-all duration-400 ease-linear from-[#0005CA] to-[#040786] items-center flex flex-1 rounded-4xl p-4">
+                <div className="flex gap-x-2 lg:gap-x-4 items-center">
                   <button>
                     <img src="/appstore.svg" alt="" />
                   </button>
@@ -50,7 +50,7 @@ export default function WhyChooseUs(){
                     <img src="/playstore.svg" alt="" />
                   </button>
                 </div>
-                <div className="flex-1 text-sm lg:text-base border-l px-4 border-white">
+                <div className="flex-1 text-xs lg:text-base border-l px-4 border-white">
                   <p>Try it out</p>
                   <p>Download Manilla Finance App</p>
                 </div>

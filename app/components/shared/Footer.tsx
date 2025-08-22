@@ -3,18 +3,18 @@ import Link from "next/link"
 
 const links = [
     {
-        url: "/",
+        url: "/#product",
         name: "Product"
     }, {
-        url: "/",
+        url: "/#services",
         name: "Services"
     },
     {
-        url: "/",
+        url: "/about",
         name: "About"
     },
     {
-        url: "/",
+        url: "/contact",
         name: "Contact"
     }
 ]
@@ -49,8 +49,8 @@ export default function Footer() {
                 </div>
                 <div className="h-[0.5px] mb-8 lg:my-8 bg-[rgba(0,0,0,0.35)]"></div>
                 <div className="flex gap-x-2 lg:gap-x-7 text-xs lg:text-base">
-                    <Link href={"/"}>Terms of Service</Link>
-                    <Link href={"/"}>Privacy Policy</Link>
+                    <Link href={"/terms"}>Terms of Service</Link>
+                    <Link href={"/privacy-policy"}>Privacy Policy</Link>
                     <p className="ml-auto">© Manilla Finance 2025</p>
                 </div>
             </div>

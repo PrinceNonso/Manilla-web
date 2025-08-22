@@ -154,7 +154,7 @@ export default function Services() {
     }, [activeTab])
 
     return (
-        <section className="py-22">
+        <section className="py-22" id="#services">
             <div className="max-w-[1196px] relative px-4 mx-auto">
                 <img className="absolute top-0 left-0 w-full h-full object-cover" src="/graphic-3.png" alt="" />
                 <div className="relative">
