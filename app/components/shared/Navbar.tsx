@@ -15,7 +15,7 @@ const links = [
     slug:"services"
   },
   {
-    url: "/",
+    url: "/about",
     name: "About",
     slug:"about"
   },
