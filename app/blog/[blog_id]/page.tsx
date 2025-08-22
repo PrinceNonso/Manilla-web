@@ -6,12 +6,12 @@ export default function () {
     return (
         <HomeLayout activeLink="blog">
             <main className="min-h-screen">
-                <div className="bg-white pt-22">
+                <div className="bg-white pt-11 lg:pt-22">
                     <div className="max-w-[1196px] px-2 mx-auto">
                         <header>
                             <button onClick={() => window.history.back()} className="underline">Back</button>
                         </header>
-                        <header className="h-[200px] lg:h-[350px] w-full relative mt-14 rounded-2xl overflow-hidden">
+                        <header className="h-[200px] lg:h-[350px] w-full relative mt-7 lg:mt-14 rounded-2xl overflow-hidden">
                             <img className="absolute top-0 left-0 w-full h-full object-cover" src="/blog/blog-1.png" alt="" />
                         </header>
                     </div>
