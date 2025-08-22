@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const links = [
   {
-    url: "/",
+    url: "/blog",
     name: "Blog",
     slug:"blog"
   }, {
