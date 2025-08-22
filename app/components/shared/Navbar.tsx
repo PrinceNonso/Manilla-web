@@ -16,7 +16,7 @@ const links = [
     name: "About"
   },
   {
-    url: "/",
+    url: "/contact",
     name: "Contact"
   }
 ]
