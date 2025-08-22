@@ -19,7 +19,7 @@ export default function () {
                 <div className="max-w-[1196px] mx-auto px-4 py-10">
                     <div className="lg:flex">
                         <div className="flex-1">
-                            <p className="text-[#FFA503] uppercase text-2xl">Digital wallets</p>
+                            <p className="text-[#FFA503] uppercase lg:text-2xl">Digital wallets</p>
                             <p className="text-2xl lg:text-4xl font-semibold">Why Flexible Pricing Matters in Today’s Digital Economy</p>
                             <div className="mt-2 lg:mt-24 gap-x-4 flex items-center">
                                 <div>
