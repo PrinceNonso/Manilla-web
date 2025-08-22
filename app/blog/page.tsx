@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HomeLayout } from "../components";
 
 function ArticleCard() {
@@ -10,7 +11,7 @@ function ArticleCard() {
             </div>
             <div className="flex-1 flex space-y-4 pt-1 lg:pt-0 flex-col justify-between">
                 <div>
-                    <p className="text-sm lg:text-2xl text-[#020617] font-semibold">Unlocking Flexible Pricing for SaaS Success</p>
+                    <Link href={"/blog/123"}><p className="text-sm lg:text-2xl text-[#020617] font-semibold">Unlocking Flexible Pricing for SaaS Success</p></Link>
                     <p className="text-[#64748B] text-xs lg:text-base">Learn how customizable pricing boosts customer satisfaction and drives revenue growth in the SaaS world.</p>
                 </div>
                 <div className="flex items-center">
@@ -33,7 +34,7 @@ function BlogCard() {
             </div>
             <div className="flex-1">
                 <span className="bg-white rounded-lg p-1 lg:p-2 text-[#04075A] font-bold text-xs">Digital Wallets</span>
-                <p className="mt-2 lg:mt-4 text-sm lg:text-3xl font-bold text-[#020617]">Why Flexible Pricing Matters in Today’s Digital Economy</p>
+                <Link href={"/blog/123"}><p className="mt-2 lg:mt-4 text-sm lg:text-3xl font-bold text-[#020617]">Why Flexible Pricing Matters in Today’s Digital Economy</p></Link>
                 <p className="mt-2 text-xs hidden lg:block lg:text-base">Flexible pricing ensures that businesses cater to diverse customer needs, from startups to enterprises. It allows clients to pay only for what they need, fostering trust and long-term relationships. </p>
                 <p className="mt-2 text-xs lg:hidden lg:text-base">Flexible pricing ensures that businesses cater to diverse customer needs, </p>
                 <div className="mt-4 lg:mt-24 gap-x-4 flex items-center">
