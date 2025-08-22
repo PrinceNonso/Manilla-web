@@ -4,13 +4,14 @@ import Navbar from "./Navbar";
 
 interface LayoutProps{
     children:ReactNode
+    activeLink?:string
 }
 
-export default function Layout(props:LayoutProps){
+export default function Layout({children,activeLink="home"}:LayoutProps){
     return(
         <>
-        <Navbar/>
-        {props.children}
+        <Navbar activeLink={activeLink}/>
+        {children}
         <Footer/>
         </>
     )

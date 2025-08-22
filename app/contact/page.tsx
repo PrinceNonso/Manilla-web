@@ -2,7 +2,7 @@ import { HomeLayout } from "../components";
 
 export default function(){
     return(
-        <HomeLayout>
+        <HomeLayout activeLink="contact">
             <main className="max-w-[1216px] mx-auto px-6">
                 <div className="min-h-screen py-14 lg:py-28 lg:grid grid-cols-2">
                     <div className="flex-1 hidden lg:block">

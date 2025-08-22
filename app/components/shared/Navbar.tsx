@@ -3,25 +3,34 @@ import Link from "next/link";
 const links = [
   {
     url: "/",
-    name: "Blog"
+    name: "Blog",
+    slug:"blog"
   }, {
     url: "/",
-    name: "Product"
+    name: "Product",
+    slug:"product"
   }, {
     url: "/",
-    name: "Services"
+    name: "Services",
+    slug:"services"
   },
   {
     url: "/",
-    name: "About"
+    name: "About",
+    slug:"about"
   },
   {
     url: "/contact",
-    name: "Contact"
+    name: "Contact",
+    slug:"contact"
   }
 ]
 
-export default function Navbar(){
+interface NavbarProps{
+  activeLink?:string
+}
+
+export default function Navbar({activeLink="home"}:NavbarProps){
     return(
          <nav className="bg-white">
                 <header className="max-w-[1196px] mx-auto px-4 min-h-[78px] flex items-center">
@@ -35,7 +44,7 @@ export default function Navbar(){
                   </div>
                   <div className="hidden lg:flex items-center gap-x-7 ml-auto">
                     {links.map(link => (
-                      <Link key={`nav-link-${link.name}`} href={link.url} className="font-semibold">
+                      <Link key={`nav-link-${link.name}`} href={link.url} className={`font-semibold ${activeLink == link.slug?"text-[#380191]":"text-[#19191B]"}`}>
                         {link.name}
                       </Link>
                     ))}
