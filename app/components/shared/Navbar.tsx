@@ -9,6 +9,13 @@ const links = [
   { url: "/about", name: "About", slug: "about" },
   { url: "/contact", name: "Contact", slug: "contact" },
 ];
+const sidelinks = [
+  { url: "/about", name: "About", slug: "about" },
+  { url: "/#product", name: "Product", slug: "product" },
+  { url: "/#services", name: "Services", slug: "services" },
+  { url: "/contact", name: "Contact", slug: "contact" },
+  { url: "/blog", name: "Blog", slug: "blog" },
+];
 
 interface NavbarProps {
   activeLink?: string;
@@ -23,11 +30,11 @@ export default function Navbar({ activeLink = "home" }: NavbarProps) {
     <>
       {/* Mobile Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-full z-[100] bg-white flex flex-col transform transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-full z-[10000] bg-white flex flex-col transform transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <header className="flex border-b border-[rgba(0,0,0,0.15)] items-center justify-between p-4">
+        <header className="flex bg-white top-0 border-b border-[rgba(0,0,0,0.15)] items-center justify-between p-4">
           <img src="/manilla-finance-logo.svg" alt="Manilla Logo" />
           <button onClick={toggleSidebar}>
             <img src="/x-close.svg" alt="Close menu" />
@@ -36,7 +43,7 @@ export default function Navbar({ activeLink = "home" }: NavbarProps) {
 
         {/* Navigation Links */}
         <div className="flex-1">
-          {links.map((link) => (
+          {sidelinks.map((link) => (
             <Link
               key={`nav-link-${link.name}`}
               href={link.url}
@@ -63,7 +70,7 @@ export default function Navbar({ activeLink = "home" }: NavbarProps) {
       </aside>
 
       {/* Top Navbar */}
-      <nav className="bg-white">
+      <nav className="bg-white sticky top-0 z-[100]">
         <header className="max-w-[1196px] mx-auto px-4 min-h-[78px] flex items-center">
           {/* Logo + Mobile Menu Button */}
           <div className="flex items-center flex-1 lg:flex-auto">
