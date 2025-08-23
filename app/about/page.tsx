@@ -56,7 +56,7 @@ export default function () {
                         </div>
                         <p className="lg:text-lg mt-16 text-[#B8B8B8]">Manilla Finance is a pioneering fintech company transforming the way utility bills and travel payments are made across Africa and North America. Founded with the vision of bridging traditional financial systems and emerging blockchain technology, Manilla Finance empowers individuals and businesses to pay bills and transact seamlessly using both utility digital assets and stable coins like USDC and USDT.</p>
                     </div>
-                    <div className="flex-1 relative h-[600px] lg:h-auto">
+                    <div className="flex-1 relative h-[300px] lg:h-auto">
                         <img className="absolute top-0 left-0 w-full h-full object-cover" src="/wall.png" alt="" />
                         <img className="absolute top-0 left-0 w-full h-full object-cover" src="/about-1.png" alt="" />
                     </div>
@@ -132,12 +132,12 @@ export default function () {
 
                                     if (item.slug == activeTab) {
                                         return (
-                                            <button key={`tab-title-${item.slug}`} className="font-semibold flex-1 max-w-[80px] sm:max-w-full text-xs lg:text-sm bg-white text-[#01011B] cursor-pointer px-3 py-1.5 lg:px-6 lg:py-3 rounded-xl">{item.label}</button>
+                                            <button key={`tab-title-${item.slug}`} className="font-semibold flex-1 max-w-[80px] sm:max-w-full text-[8px] lg:text-sm bg-white text-[#01011B] cursor-pointer px-2 py-1 lg:px-6 lg:py-3 rounded lg:rounded-xl">{item.label}</button>
                                         )
                                     }
 
                                     return (
-                                        <button onClick={() => setActiveTab(item.slug)} key={`tab-title-${item.slug}`} className="font-semibold max-w-[80px] flex-1 sm:max-w-full  text-xs lg:text-sm cursor-pointer px-3 py-1.5 rounded-xl">{item.label}</button>
+                                        <button onClick={() => setActiveTab(item.slug)} key={`tab-title-${item.slug}`} className="font-semibold max-w-[80px] flex-1 sm:max-w-full text-[8px] lg:text-sm cursor-pointer px-2 py-1 rounded lg:rounded-xl">{item.label}</button>
                                     )
                                 })}
                             </header>
@@ -163,7 +163,7 @@ export default function () {
                                     <div className="space-y-4">
                                         <header className="flex gap-x-4">
                                             <img src="/business.png" alt="" />
-                                            <p className="text-2xl font-bold">For Businessess:</p>
+                                            <p className="lg:text-2xl font-bold">For Businessess:</p>
                                         </header>
                                         <p>Integrate our APIs to offer your customers seamless crypto and fiat payment options. Enhance your billing systems with blockchain-powered transparency and security. Benefit from real-time transaction processing and comprehensive invoicing solutions designed for efficiency and compliance.</p>
                                     </div>
@@ -178,7 +178,9 @@ export default function () {
                                     </div>
                                 </div>
                             </div>
-                            <button className="bg-gradient-to-b from-[#0105C4] text-white my-3 px-6 text-lg py-2 rounded-4xl font-bold to-[#04078A] lg:hidden">Sign Up</button>
+                            <div className="text-center lg:hidden">
+                                <button className="bg-gradient-to-b from-[#0105C4] text-white my-3 px-6 lg:text-lg py-2 rounded-4xl font-bold to-[#04078A]">Sign Up</button>
+                            </div>
 
                         </div>
                     </div>
@@ -213,11 +215,11 @@ export default function () {
                             <div className="grid  lg:grid-cols-2 gap-x-6">
                                 <div className="text-center lg:text-left">
                                     <p className="text-2xl lg:text-4xl font-bold">Interested in Partnering with Us?</p>
-                                    <p className="lg:text-xl my-6">We’re always open to strategic partnerships that align with our mission to revolutionize digital finance. Reach out to us at <span className="text-[#FFA503]">partnerships@manilla.finance</span> </p>
+                                    <p className="text-sm lg:text-xl my-3 lg:my-6">We’re always open to strategic partnerships that align with our mission to revolutionize digital finance. Reach out to us at <span className="text-[#FFA503]">partnerships@manilla.finance</span> </p>
                                 </div>
                                 <div>
-                                    <textarea placeholder="Enter your message. Kindly, input your contact information as well so we can get back to you." className="p-7 bg-white h-[93px] lg:h-[168px] w-full rounded-lg text-[#7B7B7B]" id=""></textarea>
-                                    <button className="bg-gradient-to-r from-[#0106C5] min-h-7 lg:min-h-14 lg:text-xl font-bold w-full my-4 p-4 rounded-4xl text-white to-[#04078B]">Send Message</button>
+                                    <textarea placeholder="Enter your message. Kindly, input your contact information as well so we can get back to you." className="lg:p-7 p-4 bg-white text-xs lg:text-base min-h-[93px] lg:min-h-[168px] w-full rounded-lg text-[#7B7B7B]" id=""></textarea>
+                                    <button className="bg-gradient-to-r from-[#0106C5] min-h-7 lg:min-h-14 text-sm lg:text-xl font-bold w-full my-4 p-4 rounded-4xl text-white to-[#04078B]">Send Message</button>
                                 </div>
                             </div>
                         </div>

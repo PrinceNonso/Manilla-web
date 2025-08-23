@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About(){
     return(
               <section className="py-22">
@@ -17,7 +19,7 @@ export default function About(){
             </div>
             <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl hover:from-[#979797] hover:to-[#222222] cursor-pointer from-[#8183C2] to-[#1C1E6C]">
               <p className="text-lg font-semibold">Our Promise</p>
-              <p>TWe are committed to compliance, security, and service excellence while bringing cutting-edge technology to traditional services, with human support that cares.</p>
+              <p>We are committed to compliance, security, and service excellence while bringing cutting-edge technology to traditional services, with human support that cares.</p>
             </div>
             <div className="bg-gradient-to-b p-6 space-y-[10px] text-white rounded-2xl hover:from-[#979797] hover:to-[#222222] cursor-pointer from-[#8183C2] to-[#1C1E6C]">
               <p className="text-lg font-semibold">Backed by Global Experience</p>
@@ -25,7 +27,9 @@ export default function About(){
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">
-            <button className="p-6 py-3 font-bold text-lg rounded-4xl  border-[#04078C] border-2 text-[#04078C]">Read More</button>
+           <Link href={"/about"}>
+              <button className="p-6 py-3 font-bold text-sm lg:text-lg rounded-4xl  border-[#04078C] border-2 text-[#04078C]">Read More</button>
+           </Link>
           </div>
         </div>
       </section>
