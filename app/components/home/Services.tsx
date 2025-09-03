@@ -104,12 +104,12 @@ export default function Services() {
                             )
                         })}
                     </header>
-                    <div className="flex flex-col-reverse lg:flex-row items-start pt-4 lg:pt-10">
+                    <div className="flex flex-col-reverse lg:flex-row items-start py-4 lg:pt-10">
                         <div className="flex-1">
                             <p className="text-[#1D1E64] lg:text-3xl font-bold">{selectedTab.title}</p>
                             {selectedTab.content}
                         </div>
-                        <div className="flex-1 flex min-h-[300px] items-center justify-center">
+                        <div className="flex-1 flex min-h-[300px] -mt-14 lg:-mt-0 items-center justify-center">
                             <img className=" object-contain" src={selectedTab.imageSrc} alt={selectedTab.slug} />
                         </div>
                     </div>
