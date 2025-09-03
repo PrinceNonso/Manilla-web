@@ -63,7 +63,7 @@ export default function Products() {
         <div className="max-w-[1196px] mx-auto px-4">
           <header className="text-center">
             <p className="text-xs lg:text-base">Product</p>
-            <p className="font-semibold text-2xl lg:text-4xl">Redefining the <span className="text-[#040786]">Way Canada Pays</span></p>
+            <p className="font-semibold text-2xl lg:text-4xl">Your Lifestyle <span className="text-[#040786]">Fueled by Digital Assets</span></p>
           </header>
           <div className="my-4 space-y-2">
             <p>At Manilla Finance, we believe everyday payments should be instant, borderless, and built around your life and not the banks. That’s why we created a CEDEFI platform where crypto and fiat coexist seamlessly - we pay providers using fiat, and you pay us in crypto to access the same services with ease. </p>

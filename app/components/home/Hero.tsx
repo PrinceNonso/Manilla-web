@@ -13,11 +13,11 @@ export default function HeroSection() {
             <div className="mt-7">
               <p className="text-[#040786] font-semibold">As featured on:</p>
               <div className="flex gap-x-4 items-center mt-6">
-                <div><img src="/yahoo-news.svg" alt="" /></div>
-                <div><img src="/yahoo-finance.svg" alt="" /></div>
-                <div><img src="/bezinga.svg" alt="" /></div>
-                <div><img src="/tech-crunch.svg" alt="" /></div>
-                <div><img src="/entrepreneur.svg" alt="" /></div>
+                <div><img className="w-[120px] lg:w-[200px]" src="/yahoo-news.svg" alt="" /></div>
+                <div><img className="w-[120px] lg:w-[200px]" src="/yahoo-finance.svg" alt="" /></div>
+                <div><img className="w-[120px] lg:w-[200px]" src="/bezinga.svg" alt="" /></div>
+                <div><img className="w-[120px] lg:w-[200px]" src="/tech-crunch.svg" alt="" /></div>
+                <div><img className="w-[120px] lg:w-[200px]"src="/entrepreneur.svg" alt="" /></div>
               </div>
             </div>
           </div>
