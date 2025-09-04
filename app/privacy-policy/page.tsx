@@ -26,7 +26,7 @@ export default function () {
                             By using our platform — whether through our mobile app or website — you consent to the practices described in this policy.
                         </p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">1. Information We Collect</p>
                         <p>We collect the following types of personal and technical information:</p>
                         <div className="mt-6">
@@ -57,7 +57,7 @@ export default function () {
 
                         </div>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">2. How We Collect Information</p>
                         <p>Your data may be collected through:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -66,7 +66,7 @@ export default function () {
                             <li>Third-party service providers (payment processors, ID verification systems)</li>
                         </ul>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">3. Why We Collect Your Information</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
                             <li>To create and manage your account</li>
@@ -78,7 +78,7 @@ export default function () {
                         </ul>
 
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">4. Consent and Your Rights</p>
                         <p>We obtain your explicit consent for collecting, using, and disclosing your personal information. You may withdraw your consent at any time, subject to legal or contractual restrictions.</p>
                         <p>Under PIPEDA, you have the right to:</p>
@@ -89,7 +89,7 @@ export default function () {
                             <li>File a complaint with the Office of the Privacy Commissioner of Canada</li>
                         </ul>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">5. Disclosure of Your Information</p>
                         <p>We do not sell or rent your personal information. We may share it with trusted third parties only when necessary, including:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -99,7 +99,7 @@ export default function () {
                         </ul>
                         <p>All third-party vendors are contractually obligated to maintain strict confidentiality and comply with Canadian data protection laws.</p>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">6. How We Protect Your Information</p>
                         <p>We use industry-standard security measures to protect your data, including:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -109,11 +109,11 @@ export default function () {
                             <li>Secure data storage on Canadian or privacy-compliant cloud servers</li>
                         </ul>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">7. International Data Transfers</p>
                         <p>While we strive to store data in Canada, some information may be transferred to or processed in jurisdictions outside Canada. In such cases, we ensure that appropriate contractual, legal, and technical safeguards are in place to protect your information.</p>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">8. Retention of Personal Information</p>
                         <p>We retain your data only for as long as necessary to.</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -124,7 +124,7 @@ export default function () {
                         <p>When no longer required, your data is securely deleted or anonymized</p>
 
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">9. Cookies and Tracking Technologies</p>
                         <p>We use cookies to:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -134,19 +134,19 @@ export default function () {
                         </ul>
                         <p>You can disable cookies through your browser settings; however, some features of our app or website may not function properly.</p>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">10. Children’s Privacy</p>
                         <p>Our services are not intended for users under the age of 18. We do not knowingly collect personal data from children. If we learn we have inadvertently collected data from a minor, we will delete it promptly.</p>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">11.  Changes to This Privacy Policy</p>
                         <p>We may update this Privacy Policy periodically to reflect changes in legal requirements or business practices. You will be notified of any material changes via email or in-app alert. Continued use of the platform constitutes acceptance of the revised policy.</p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">12. Contact Us</p>
                         <p>For questions or concerns regarding your personal data, or to exercise your rights, please contact our Privacy Officer:</p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="font-semibold">Privacy Officer</p>
                         <p>Manilla Finance Inc.</p>
                         <p>Email: privacy@manilla.finance</p>

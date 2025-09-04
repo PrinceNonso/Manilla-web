@@ -28,7 +28,7 @@ export default function () {
 
                         </p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">1. Eligibility</p>
                         <p>You must be:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -38,7 +38,7 @@ export default function () {
                         </ul>
 
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">2. Account Registration</p>
                         <p>To access most features of the Platform, you must register and create a personal account. You agree to:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -48,7 +48,7 @@ export default function () {
                         </ul>
                         <p>You are responsible for all activities that occur under your account.:</p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">3. Use of the Platform</p>
                         <p>You agree to use the Platform:</p>
                         <ul className="list-disc mb-1 list-inside space-y-1 text-gray-800">
@@ -64,7 +64,7 @@ export default function () {
                             <li>Without infringing on others’ rights or violating any applicable financial or anti-money laundering regulations.</li>
                         </ul>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">4. Financial Transactions & Crypto Payments</p>
                         <p>Manilla Finance Canada allows users to</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -83,7 +83,7 @@ export default function () {
                         <p>You are solely responsible for the accuracy of payment details and wallet addresses. Transactions in crypto are <b>non-reversible.</b></p>
 
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">5. KYC, Compliance, and Account Suspension</p>
                         <p>In compliance with Canadian laws, we may require identity verification (KYC). We reserve the right to</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -94,12 +94,12 @@ export default function () {
 
                         <p>All third-party vendors are contractually obligated to maintain strict confidentiality and comply with Canadian data protection laws.</p>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">6. Intellectual Property</p>
                         <p>All content, branding, and features on the Platform — including logos, code, designs, trademarks, and text — are owned or licensed by Manilla Finance Canada.</p>
                         <p>You may not use, copy, or distribute our intellectual property without our written permission</p>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">7. Third-Party Services</p>
                         <p>The Platform may contain links to or integrate third-party services (e.g., payment processors, cloud wallets). We are not responsible for:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -109,7 +109,7 @@ export default function () {
                         <p>Use of third-party services is subject to their respective terms and privacy policies.</p>
 
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">8. Limitation of Liability</p>
                         <p>the fullest extent permitted by law, Manilla Finance Canada shall not be liable for:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -122,7 +122,7 @@ export default function () {
                         <p>All services are provided on an “as is” and “as available” basis without warranties of any kind, express or implied.</p>
 
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">9. Termination</p>
                         <p>We may terminate or suspend your access to the Platform at our discretion, with or without notice, if you:</p>
                         <ul className="list-disc list-inside space-y-1 text-gray-800">
@@ -137,23 +137,23 @@ export default function () {
                             <li>Outstanding payments or obligations remain enforceable.</li>
                         </ul>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">10. Privacy</p>
                         <p>Our collection and use of your data is governed by our Privacy Policy, which complies with Canada’s Personal Information Protection and Electronic Documents Act (PIPEDA). By using the Platform, you consent to our data practices.</p>
                     </div>
-                    <div className="py-8 ext-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 ext-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">11.   Amendments to These Terms</p>
                         <p>We reserve the right to update or modify these Terms at any time. Changes become effective upon being posted on the Platform. Your continued use after any modifications indicates your acceptance of the revised Terms.</p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">12.Governing Law and Jurisdiction</p>
                         <p>These Terms are governed by the laws of the <b>Province of Ontario</b> and the <b>federal laws of Canada</b>. Any disputes shall be resolved in the courts of Ontario, Canada.</p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="lg:text-2xl font-semibold">13. Contact Us</p>
                         <p>For questions or concerns regarding your personal data, or to exercise your rights, please contact our Privacy Officer:</p>
                     </div>
-                    <div className="py-8 text-sm lg:text-lg text-[#333333]">
+                    <div className="py-4 lg:py-8 text-sm lg:text-lg text-[#333333]">
                         <p className="font-semibold">Privacy Officer</p>
                         <p>Manilla Finance Inc.</p>
                         <p>Email: privacy@manilla.finance</p>
