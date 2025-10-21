@@ -1,0 +1,15 @@
+export { default as HeroSection } from "./Hero";
+export { default as NewHeroSection } from "./NewHero";
+export { default as LearnAboutUsSection } from "./LearnAboutUs";
+export { default as NewAboutSection } from "./NewAbout";
+export { default as BlogSection } from "./Blogs";
+export { default as WhyManiilaAppSection } from "./WhyChooseManillaApp";
+export { default as OurServices } from "./OurServices";
+export { default as MediaPartnersSection } from "./WCMAMediaPartners";
+export { default as WhyChooseSection } from "./WhyChooseManilla";
+export { default as ServicesSection } from "./Services";
+export { default as ProductSection } from "./Products";
+export { default as AboutSection } from "./About";
+export { default as WhyChooseUsSection } from "./WhyChooseUs";
+export { default as PartnersSection } from "./Partners";
+export { default as NewsLetterSection } from "./NewsLetter";

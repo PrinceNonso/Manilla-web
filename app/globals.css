@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --grey-500: #868686; /* define your grey color */
+}
+
+@theme {
+  /* === Brand Colors === */
+  --color-primary: #281ac9;
+  --color-pry-text: #181635;
+
+  --color-brand-regular: #d5e9f3;
+  --color-brand-light: #818cf8;
+  --color-brand-dark: #312e81;
+  --color-brand-light: #1abfc8;
+  --color-brand-lighter: #d7e3ff59;
+  --color-blue-1: #181635;
+  --color-dark-1: #282828;
+  --color-dark: #1d1d1d;
+  --color-secondary: #faca31;
+
+  /* === Grays === */
+  --color-gray-100: #f3f4f6;
+  --color-gray-300: #d1d5db;
+  --color-gray-500: #868686; /* 👈 your custom gray */
+  --color-gray-700: #374151;
+  --color-bleu-900: #111827;
+
+  /* === Fonts === */
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* === container ==== */
+}
+.marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
