@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import NotchedCard from "./ClippedComp";
 import BlogCard from "../blogCard";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Swiper as SwiperType } from "swiper";
 
@@ -36,18 +36,6 @@ export default function BlogsComp() {
     },
   ];
 
-  useEffect(() => {
-    const swiper = swiperInstanceRef.current;
-    if (swiper && paginationRef.current) {
-      swiper.params.pagination = {
-        el: paginationRef.current,
-        clickable: true,
-      };
-      swiper.pagination.init();
-      swiper.pagination.update();
-    }
-  }, []);
-
   return (
     <div className="flex flex-col-reverse lg:flex-row gap-6 items-center justify-center mt-6 px-4">
       <div className="w-full lg:max-w-4xl relative">
@@ -56,7 +44,19 @@ export default function BlogsComp() {
           loop={true}
           onSwiper={(swiper) => {
             swiperInstanceRef.current = swiper;
+            // Queue setup for next tick to ensure ref/DOM readiness
+            setTimeout(() => {
+              if (paginationRef.current) {
+                swiper.params.pagination = {
+                  el: paginationRef.current,
+                  clickable: true,
+                };
+                swiper.pagination.init();
+                swiper.pagination.update();
+              }
+            }, 0);
           }}
+          // Disable default to avoid auto-rendering
           pagination={false}
           spaceBetween={20}
           slidesPerView={1}
@@ -76,13 +76,13 @@ export default function BlogsComp() {
           {/* Navigation Buttons */}
           <button
             onClick={() => swiperInstanceRef.current?.slidePrev()}
-            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
+            className="w-10 h-10 rounded-full bg-dark-1 hover:bg-bleu-900 cursor-pointer flex items-center justify-center transition-colors"
             aria-label="Previous Slide">
             <ChevronLeft className="w-5 h-5 text-white" />
           </button>
           <button
             onClick={() => swiperInstanceRef.current?.slideNext()}
-            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
+            className="w-10 h-10 rounded-full !bg-dark-1 hover:bg-bleu-900 flex items-center cursor-pointer justify-center transition-colors"
             aria-label="Next Slide">
             <ChevronRight className="w-5 h-5 text-white" />
           </button>

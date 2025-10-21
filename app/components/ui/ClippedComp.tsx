@@ -28,10 +28,10 @@ export default function NotchedCard() {
         </svg>
 
         <div
-          className="bg-white p-6 w-full px-4 md:w-96 shadow-xl"
+          className="bg-white p-32 w-full px-4 md:w-96 shadow-xl"
           style={{
             clipPath: "url(#notchClip)",
-            paddingBottom: "140px",
+            paddingBottom: "120px",
           }}>
           {/* Blogs Badge */}
           <div className="flex justify-center mb-8">
@@ -55,9 +55,9 @@ export default function NotchedCard() {
 
       {/* All Blogs Button - Positioned in the notch */}
       <button
-        className="absolute left- bg-yellow-400 hover:bg-yellow-500 transition-colors text-gray-900 font-semibold px-8 py-4 rounded-2xl flex items-center gap-3 shadow-lg"
+        className="absolute left- bg-yellow-400 hover:bg-yellow-500 transition-colors text-gray-900 font-semibold px-8 py-5 rounded-2xl flex items-center gap-3 shadow-lg"
         style={{
-          bottom: "5px",
+          bottom: "8px",
         }}>
         <svg
           className="w-0.5 sm:w-1.5 md:w-3 md:h-4"

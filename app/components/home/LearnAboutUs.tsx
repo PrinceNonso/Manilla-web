@@ -53,7 +53,7 @@ const LearnAboutUs = () => {
         </div>
 
         {/* === RIGHT SECTION: CAROUSEL === */}
-        <div className=" w-full bg-brand-lighter lg:max-w-[68rem] lg:h-[85vh] py-6 px-2 lg:rounded-l-2xl">
+        <div className=" w-full bg-brand-lighter lg:max-w-[65rem] lg:h-[90vh] py-4 px-2 lg:rounded-l-2xl">
           <Carousel
             className="w-full"
             opts={{
