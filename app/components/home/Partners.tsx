@@ -1,3 +1,4 @@
+// partners logos
 const partners = [
   "/p2b.svg",
   "/keiretsu.svg",
