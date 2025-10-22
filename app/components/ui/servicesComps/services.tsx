@@ -184,7 +184,7 @@ export const Services = () => {
     tooltipStep === -1 ? 0 : (tooltipStep / (stepCount - 1)) * containerHeight;
 
   return (
-    <div className="relative">
+    <div className="relative hidden lg:block">
       <div>
         <h2 className=" flex items-center justify-center gap-2 text-blue-1 font-bold text-base md:text-xl lg:text-2xl ">
           Our Services

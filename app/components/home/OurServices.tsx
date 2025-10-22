@@ -3,6 +3,7 @@ import React from "react";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 import { Services } from "../ui/servicesComps/services";
+import ServicesCarousel from "../ui/servicesComps/mobileComp";
 
 const OurServices = () => {
   return (
@@ -91,6 +92,7 @@ const OurServices = () => {
         <div className="flex-1 ">
           {/* <Demo /> */}
           <Services />
+          <ServicesCarousel />
         </div>
       </div>
     </section>
