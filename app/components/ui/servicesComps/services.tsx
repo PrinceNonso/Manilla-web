@@ -96,37 +96,37 @@ const ProgressTooltip: React.FC<ProgressTooltipProps> = ({ step, visible }) => {
   );
 };
 
-export const Services = () => {
-  const serviceData = [
-    {
-      title: "Travel & Mobility",
-      paragraphs: [
-        "Whether you’re booking a weekend in Abuja or a vacation in Dubai, we connect you to over 3,000 destinations via our partner, Borderless Travels.",
-        "From flights and hotel reservations to airport drop-offs, your entire travel experience can now be powered by stablecoins and Manilla’s smart wallet.",
-      ],
-    },
-    {
-      title: "Everyday Bills",
-      intro:
-        "Whether it’s NEPA light, topping up Glo data, or paying for your DSTV subscription—we make it happen in a few taps, 24/7.",
-      list: ["Airtime & Data", "Cable TV", "Electricity", "Water & Gas"],
-    },
-    {
-      title: "For Businesses & Freelancers",
-      paragraphs: [
-        "Today’s Nigerian freelancer is global. So is the modern SME. With Manilla’s business tools, you can invoice international clients and get paid in crypto—without conversion headaches, delays, or high banking fees.",
-        "From designers and developers to export merchants and digital coaches, Manilla gives you the power to scale.",
-      ],
-    },
-    {
-      title: "Naira Bridge - Convert Crypto to Naira Without Stress",
-      paragraphs: [
-        "Swapping digital assets for naira shouldn’t feel like navigating a black market.",
-        "Naira Bridge offers you a reliable, transparent way to convert major cryptocurrencies into naira—and vice versa. Built for traders, freelancers, and everyday users alike, it’s designed to be fast, fair, and frictionless.",
-      ],
-    },
-  ];
+export const serviceData = [
+  {
+    title: "Travel & Mobility",
+    paragraphs: [
+      "Whether you’re booking a weekend in Abuja or a vacation in Dubai, we connect you to over 3,000 destinations via our partner, Borderless Travels.",
+      "From flights and hotel reservations to airport drop-offs, your entire travel experience can now be powered by stablecoins and Manilla’s smart wallet.",
+    ],
+  },
+  {
+    title: "Everyday Bills",
+    intro:
+      "Whether it’s NEPA light, topping up Glo data, or paying for your DSTV subscription—we make it happen in a few taps, 24/7.",
+    list: ["Airtime & Data", "Cable TV", "Electricity", "Water & Gas"],
+  },
+  {
+    title: "For Businesses & Freelancers",
+    paragraphs: [
+      "Today’s Nigerian freelancer is global. So is the modern SME. With Manilla’s business tools, you can invoice international clients and get paid in crypto—without conversion headaches, delays, or high banking fees.",
+      "From designers and developers to export merchants and digital coaches, Manilla gives you the power to scale.",
+    ],
+  },
+  {
+    title: "Naira Bridge - Convert Crypto to Naira Without Stress",
+    paragraphs: [
+      "Swapping digital assets for naira shouldn’t feel like navigating a black market.",
+      "Naira Bridge offers you a reliable, transparent way to convert major cryptocurrencies into naira—and vice versa. Built for traders, freelancers, and everyday users alike, it’s designed to be fast, fair, and frictionless.",
+    ],
+  },
+];
 
+export const Services = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [tooltipStep, setTooltipStep] = useState(-1);
   const [containerHeight, setContainerHeight] = useState(0);
@@ -210,7 +210,6 @@ export const Services = () => {
           ))}
         </div>
 
-        {/* === Progress Bar + Tooltip Area === */}
         <div className="flex-shrink-0 hidden md:flex items-start relative mx-auto">
           <div
             className="relative h-full bg-[#5858581F] p-4 py-4 rounded-full"
