@@ -48,8 +48,8 @@ const WhyChooseManilla = () => {
           </Button>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 w-full mb-20">
-          <div className="relative md:w-[45%] w-full h-[28rem]">
+        <div className="flex flex-col lg:flex-row gap-4 w-full mb-20">
+          <div className="relative lg:w-[45%] w-full h-[28rem]">
             <Image
               src="/about/wcu.jpg"
               alt="About"
@@ -59,7 +59,7 @@ const WhyChooseManilla = () => {
             />
           </div>
 
-          <div className="md:w-[55%] w-full bg-black flex flex-col items-cente justify-cente p-4 rounded-xl gap-4">
+          <div className="lg:w-[55%] w-full bg-black flex flex-col items-cente justify-center  p-4 rounded-xl gap-4">
             <div className="text-white text-2xl font-semibold text-cente  flex gap-4">
               <Secle />
               <h2 className="text-base md:text-2xl">

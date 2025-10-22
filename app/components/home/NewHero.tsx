@@ -11,7 +11,6 @@ const NewHero = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with Fade-in */}
       <div className="absolute inset-0">
         <Image
           src="/hero/heroGradient.jpg"
@@ -27,27 +26,52 @@ const NewHero = () => {
         {/* Optional dark overlay */}
         <div className="absolute inset-0 bg-black/30" />
       </div>
-
-      {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center space-y-4">
-        <h1 className="text-white text-2xl md:text-4xl lg:text-6xl font-bold">
+      {/* Hero Content - Add py-8 here for spacing without affecting background */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center space-y-4 ">
+        <h1 className="text-white text-2xl md:text-4xl font-bold">
           Redefining How You Pay, <br /> Travel, and Connect.
         </h1>
-
         <p className="text-[var(--grey-500)] max-w-[38rem] text-base md:text-xl">
           Simplify utility bills and travel payments across Africa and North
           America — fast, secure, and affordable with{" "}
           <span className="text-white font-bold">Manilla Finance</span>.
         </p>
-
         <Button variant="whiteBtn" size="lg" className="!h-11 !px-6">
           Get started Now
           <LiaArrowRightSolid />
         </Button>
-
         {/* Decorative Arrow */}
-        <div className="absolute bottom-[8rem] right-8 md:right-[34rem]">
+        {/* <div className="absolute bottom-[8rem] right-8 md:right-[34rem]">
           <CurvedArrow />
+        </div> */}
+        {/* Hero Girl Image with Responsive Overlays */}
+        <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
+          <Image
+            src="/hero/hero-girl.png"
+            alt="Hero girl"
+            fill
+            className="object-cover rounded-full" // Added rounded-full for a polished look
+          />
+          {/* Overlays Container: Positioned below the image, centered and responsive */}
+          <div className="absolute bottom-[2rem] left-[22rem] transform translate-x-1/2 flex flex-col items-center space-y-2 z-20">
+            {/* Download Text: Centered above badges */}
+            <p className="text-white text-sm md:text-base lg:text-lg pl-10 font-semibold whitespace-nowrap">
+              Download Manilla App
+            </p>
+            {/* Badges: Horizontal flex, responsive sizing, centered */}
+            <div className="flex space-x- md:space-x-">
+              <img
+                src="/hero/googlePlay.png"
+                alt="Get it on Google Play"
+                className="w-20 h-12 md:w-28 md:h-14 lg:w-44 lg:h-18 hover:scale-105 transition-transform duration-200"
+              />
+              <img
+                src="/hero/appleStore.png"
+                alt="Download on the App Store"
+                className="w-20 h-12 md:w-28 md:h-14  lg:w-44 lg:h-18 hover:scale-105 transition-transform duration-200"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

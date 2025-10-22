@@ -14,6 +14,7 @@
   --color-brand-dark: #312e81;
   --color-brand-light: #1abfc8;
   --color-brand-lighter: #d7e3ff59;
+  --color-lightest: #d5f9fb5c;
   --color-blue-1: #181635;
   --color-dark-1: #282828;
   --color-dark: #1d1d1d;
@@ -48,5 +49,3 @@
     transform: translateX(-50%);
   }
 }
-
-
