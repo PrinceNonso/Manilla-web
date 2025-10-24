@@ -26,7 +26,7 @@ const LearnAboutUs = () => {
       <div className=" lg:pl-8 flex flex-col lg:flex-row items-center gap-10">
         {/* === LEFT SECTION === */}
         <div className="space-y-4 flex-1">
-          <Button variant="destructive">
+          <Button variant="destructive" className="cursor-none ">
             <span className="text-secondary">Learn About </span> Our Products
           </Button>
 
@@ -53,7 +53,7 @@ const LearnAboutUs = () => {
         </div>
 
         {/* === RIGHT SECTION: CAROUSEL === */}
-        <div className=" w-full bg-brand-lighter lg:max-w-[65rem] lg:h-[90vh] py-4 px-2 lg:rounded-l-2xl">
+        <div className=" w-full bg-brand-lighter lg:max-w-[65rem] lg:h-[80vh py-4 px-2 lg:rounded-l-2xl">
           <Carousel
             className="w-full"
             opts={{

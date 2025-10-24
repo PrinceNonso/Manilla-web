@@ -19,7 +19,7 @@ const OurServices = () => {
             className="object-contain rounded-md "
           />
           <h2 className="absolute inset-0 flex items-center justify-center gap-2 text-blue-1 font-bold text-lg md:text-xl drop-shadow-md">
-            About Us
+            Our Services
             <span className="bg-white/20 rounded-full p-1.5 shadow-lg backdrop-blur-sm">
               <MdKeyboardDoubleArrowDown className="w-4 h-4" />
             </span>
@@ -56,7 +56,7 @@ const OurServices = () => {
 
       {/* Visual + Demo Section */}
       <div className="mt-12 flex flex-col lg:flex-row lg:max-w-[95rem] mx-auto gap-0 lg:gap-6">
-        <div className="flex-1  relative bg-dark rounded-t-[4rem] overflow-hidden max-h-full lg:max-h-[58rem] ">
+        <div className="flex-1  relative bg-dark rounded-t-[4rem] overflow-hidden max-h-full xl:max-h-[58rem] ">
           <img
             src="/services/lines.png"
             alt="Decorative abstract lines"

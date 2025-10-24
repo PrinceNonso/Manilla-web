@@ -1,15 +1,8 @@
 "use client";
 
-import React from "react";
-
+import React, { useState, useEffect, useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "../carousel";
 
 export const serviceData = [
   {
@@ -42,56 +35,111 @@ export const serviceData = [
 ];
 
 const ServicesCarousel = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Sync active index with Embla
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => setActiveIndex(emblaApi.selectedScrollSnap());
+
+    emblaApi.on("select", onSelect);
+    onSelect();
+
+    const interval = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 2000);
+
+    return () => {
+      emblaApi.off("select", onSelect);
+      clearInterval(interval);
+    };
+  }, [emblaApi]);
+
+  const scrollTo = useCallback(
+    (index: number) => emblaApi?.scrollTo(index),
+    [emblaApi]
+  );
+
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+
   return (
-    <div className="w-full max-w-4xl mx-auto relative py-8 px-">
-      <Carousel className="w-full relative ">
-        <CarouselContent className="-ml-4 space-x-4">
+    <div className="w-full mx-auto relative py-8 lg:hidden">
+      {/* Embla viewport */}
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex gap-4 mx-auto px-6">
           {serviceData.map((service, index) => (
-            <CarouselItem
+            <div
               key={index}
-              className="basis-full md:basis-1/2 pl-4 first:pl-0 p-8 px-4 text-center bg-gray-100 rounded-xl shadow-md flex flex-col items-center justify-center gap-4">
+              className="flex-shrink-0 w-full md:w-1/2 text-start p-4  bg-gray-100 border-4 border-[#28282852] rounded-xl shadow-md flex flex-col items-center justify-center gap-4">
               <h2 className="text-xl font-bold">{service.title}</h2>
 
               {service.intro && (
-                <p className="text-gray-700">{service.intro}</p>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  {service.intro}
+                </p>
               )}
 
               {service.list && (
-                <div className="grid grid-cols-2 gap-3 mt-2">
+                <div className="grid grid-cols-2 gap-4 mt-2">
                   {service.list.map((item, i) => (
                     <div key={i} className="flex items-center gap-2">
                       <span className="bg-white rounded-full p-1.5">
-                        <MdKeyboardDoubleArrowRight className="w-4 h-4 text-black" />
+                        <MdKeyboardDoubleArrowRight className="w-4 h-4 text-blue-1" />
                       </span>
-                      <p className="text-gray-800">{item}</p>
+                      <p className="text-gray-800 text-sm">{item}</p>
                     </div>
                   ))}
                 </div>
               )}
 
               {service.paragraphs && !service.intro && (
-                <div className="space-y-2">
+                <div className="space-y-2 text-base">
                   {service.paragraphs.map((para, i) => (
                     <p
                       key={i}
-                      className="text-gray-700 text-sm leading-relaxed">
+                      className="text-gray-700 text-sm md:!text-base leading-relaxed">
                       {para}
                     </p>
                   ))}
                 </div>
               )}
-            </CarouselItem>
+            </div>
           ))}
-        </CarouselContent>
-        <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 flex gap-4">
-          <CarouselPrevious className="p-2 bg-white rounded-full shadow hover:bg-gray-200">
-            &#10094;
-          </CarouselPrevious>
-          <CarouselNext className="p-2 bg-white rounded-full shadow hover:bg-gray-200">
-            &#10095;
-          </CarouselNext>
         </div>
-      </Carousel>
+      </div>
+
+      {/* Dots + Nav Arrows */}
+      <div className="flex items-center justify-center gap-2 mt-4">
+        {/* Left arrow */}
+        <button
+          onClick={scrollPrev}
+          className="p-2 bg-white rounded-full shadow hover:bg-gray-200">
+          &#10094;
+        </button>
+
+        {/* Dots */}
+        {serviceData.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => scrollTo(i)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ease-linear ${
+              activeIndex === i
+                ? "bg-dark w-12 scale-110 "
+                : "bg-secondary hover:bg-gray-600"
+            }`}
+          />
+        ))}
+
+        {/* Right arrow */}
+        <button
+          onClick={scrollNext}
+          className="p-2 bg-white rounded-full shadow hover:bg-gray-200">
+          &#10095;
+        </button>
+      </div>
     </div>
   );
 };

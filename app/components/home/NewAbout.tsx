@@ -47,7 +47,7 @@ const NewAbout = () => {
                 and freedom of crypto.
               </p>
             </div>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col w-full sm:flex-row gap-4">
               <Button variant={"ghost"} className="text-base  md:px-8">
                 Click to learn more about us
               </Button>
