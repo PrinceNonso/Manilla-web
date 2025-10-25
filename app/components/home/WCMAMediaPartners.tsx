@@ -20,7 +20,7 @@ const mediaPartnersLogos = [
 ];
 
 const WCMAMediaPartners = () => (
-  <section className=" md:px-20 mt-8 mx-auto">
+  <section className=" lg:px-20 mt-8 mx-auto">
     <div className="relative bg-dark-1 h-[450px] md:h-[480px] lg:h-[600px] overflow-hidden rounded-t-4xl flex flex-col items-center justify-center pt-20 ">
       {/* Decorative stroke inside the same section */}
       <Image
@@ -96,16 +96,16 @@ const WCMAMediaPartners = () => (
     </div>
 
     {/* Optional background for lower section */}
-    <div className="relative w-full md:h-[300px] overflow-hidden lg:rounded-b-3xl py-4 md:py-8 !px-4 mx-auto flex flex-col items-center">
+    <div className="relative w-full  overflow-hidde py-4 md:py-8 !px-4 mx-auto flex flex-col items-center">
       <Image
         src="/wcma/bgInt.png"
         alt="Hero Background"
         fill
-        className="absolute inset-0 w-full h-full object-cover lg:rounded-b-3xl"
+        className="absolute inset-0 w-full h-full object-cover lg:rounded-b-3xl lg:!rounded-t-none"
         priority
       />
 
-      <div className="relative text-center mx-auto flex flex-col items-center pt-4 space-y-8 px-4 w-full ">
+      <div className="relative text-center mx-auto flex flex-col items-center pb-10 space-y-8 px-4 w-full ">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
           Be First. Be Ready.
         </h2>

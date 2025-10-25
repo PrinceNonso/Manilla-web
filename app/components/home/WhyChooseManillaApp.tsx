@@ -17,7 +17,7 @@ const WhyChooseManillaApp = () => {
   ];
 
   return (
-    <section className=" md:px-20">
+    <section className=" lg:px-20">
       {/* === Top Section === */}
       <div className="relative w-full h-[400px] overflow-hidden rounded-t-3xl py-8">
         {/* Background Image using next/image */}

@@ -12,7 +12,7 @@ const NewHero = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <section className="relative h- w-full overflow-hidden space-y-4 pt-8 ">
+    <section className="relative h-full w-full overflow-hidden space-y-4 pt-8 ">
       <div className="absolute inset-0">
         <Image
           src="/hero/heroGradient.jpg"
