@@ -49,7 +49,7 @@ const ServicesCarousel = () => {
 
     const interval = setInterval(() => {
       emblaApi.scrollNext();
-    }, 2000);
+    }, 2500);
 
     return () => {
       emblaApi.off("select", onSelect);
@@ -112,11 +112,11 @@ const ServicesCarousel = () => {
       </div>
 
       {/* Dots + Nav Arrows */}
-      <div className="flex items-center justify-center gap-2 mt-4">
+      <div className="flex items-center justify-center gap-2 mt-8">
         {/* Left arrow */}
         <button
           onClick={scrollPrev}
-          className="p-2 bg-white rounded-full shadow hover:bg-gray-200">
+          className="h-7 w-7 bg-dark cursor-pointer rounded-full text-white hover:text-secondary hover:bg-blue-1">
           &#10094;
         </button>
 
@@ -136,7 +136,7 @@ const ServicesCarousel = () => {
         {/* Right arrow */}
         <button
           onClick={scrollNext}
-          className="p-2 bg-white rounded-full shadow hover:bg-gray-200">
+          className="h-7 w-7 bg-dark cursor-pointer rounded-full text-white hover:text-secondary hover:bg-blue-1">
           &#10095;
         </button>
       </div>
