@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { LiaArrowRightSolid } from "react-icons/lia";
 import { CurvedArrow } from "@/public/svg";
 import Image from "next/image";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const NewHero = () => {
   const [loaded, setLoaded] = useState(false);
@@ -45,13 +46,30 @@ const NewHero = () => {
           <CurvedArrow />
         </div> */}
         {/* Hero Girl Image with Responsive Overlays */}
-        <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
+        <div className="relative  w-64 h-64 lg:w-80 lg:h-80">
           <Image
             src="/hero/hero-girl.png"
             alt="Hero girl"
             fill
             className="object-cover rounded-full" // Added rounded-full for a polished look
           />
+          <div className="absolute -bottom-4 left-[3rem] md:-bottom-10 md:left-18">
+            <img
+              src="/hero/blurry.png"
+              alt=""
+              className="relative w-40 h-16  lg:w-48 lg:h-20"
+            />
+
+            <div className="flex items-center gap-2 absolute text-xs lg:text-sm text-white top-4 left-5 lg:left-9 text-center">
+              <p className="pl-2">
+                Trusted by <br />{" "}
+                <span className="font-semibold text-nowrap">Top Platforms</span>
+              </p>{" "}
+              <span className="bg-[#D5F9FB5C] p-1.5 rounded-full">
+                <MdKeyboardDoubleArrowDown />
+              </span>
+            </div>
+          </div>
           {/* Overlays Container: Positioned below the image, centered and responsive */}
           <div className="absolute bottom-[2rem] left-[22rem] transform translate-x-1/2 flex flex-col items-center space-y-2 z-20">
             {/* Download Text: Centered above badges */}
