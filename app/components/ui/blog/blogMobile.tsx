@@ -17,12 +17,12 @@ const blogPosts = [
     title: "The Future of Digital Payments",
   },
   {
-    imageSrc: "/blog/blog3.jpg",
+    imageSrc: "/blog/blog1.jpg",
     date: "July 7, 2024",
     title: "Building Cross-Border Payment Solutions",
   },
   {
-    imageSrc: "/blog/blog4.jpg",
+    imageSrc: "/blog/blog2.jpg",
     date: "September 22, 2024",
     title: "Crypto Simplified for Global Transactions",
   },
