@@ -95,7 +95,7 @@ const NewHero = () => {
 
           {/* Overlays Container: Positioned below the image, centered and responsive */}
           <div className="absolute bottom-[-1rem] lg:left-[22rem] transform translate-x-1/2 flex flex-col items-center space-y-2 z-20">
-            <div className="absolute lg:-left-[5rem] top-[-14rem]">
+            <div className="absolute md:-left-[9rem] lg:-left-[7rem] xl:-left-[5rem] top-[-14rem]">
               <img
                 src="/hero/blockchain.png"
                 alt=""
@@ -107,7 +107,7 @@ const NewHero = () => {
               Download Manilla App
             </p>
             {/* Badges: Horizontal flex, responsive sizing, centered */}
-            <div className="flex space-x- md:space-x-">
+            <div className="flex w-full absolute top-[-3rem] right-[8rem] xl:static ">
               <img
                 src="/hero/googlePlay.png"
                 alt="Get it on Google Play"
@@ -128,7 +128,7 @@ const NewHero = () => {
             </div>
           </div>
 
-          <div className="absolute -bottom-[8rem] right-[23rem] w-[15rem] h-44">
+          <div className="absolute lg:-bottom-[8rem] lg:right-[23rem] w-[15rem] h-44">
             <img src="/hero/activeUsers.png" alt="" />
           </div>
         </div>

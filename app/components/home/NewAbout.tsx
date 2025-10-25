@@ -39,7 +39,7 @@ const NewAbout = () => {
           </div>
           <div className="space-y-6">
             <div className="bg-[#E2E2E242] rounded-xl py-10 px-6">
-              <p className="text-base md:text-xl font-medium max-w-[62rem] leading-8">
+              <p className="text-base    font-medium max-w-[62rem] leading-8">
                 From bank queues and failed transfers to delayed utility credits
                 and cross-border headaches, the system isn’t built for speed or
                 convenience. That’s why we created Manilla Pay: to merge the

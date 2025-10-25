@@ -49,7 +49,7 @@ const WhyChooseManilla = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-4 w-full mb-20">
-          <div className="relative lg:w-[45%] w-full h-[28rem]">
+          <div className="relative lg:w-[45%] w-full h-[28rem] lg:h-[38rem] xl:h-[28rem]">
             <Image
               src="/about/wcu.jpg"
               alt="About"
