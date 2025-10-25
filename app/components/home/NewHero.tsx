@@ -12,7 +12,7 @@ const NewHero = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <section className="relative h- w-full overflow-hidden space-y-4 pt-8">
+    <section className="relative h- w-full overflow-hidden space-y-4 pt-8 ">
       <div className="absolute inset-0">
         <Image
           src="/hero/heroGradient.jpg"
@@ -94,7 +94,14 @@ const NewHero = () => {
           </div>
 
           {/* Overlays Container: Positioned below the image, centered and responsive */}
-          <div className="absolute bottom-[-1rem] left-[22rem] transform translate-x-1/2 flex flex-col items-center space-y-2 z-20">
+          <div className="absolute bottom-[-1rem] lg:left-[22rem] transform translate-x-1/2 flex flex-col items-center space-y-2 z-20">
+            <div className="absolute lg:-left-[5rem] top-[-14rem]">
+              <img
+                src="/hero/blockchain.png"
+                alt=""
+                className="w-20 h-12 md:w-28 md:h-14  lg:w-48 hover:scale-105 transition-transform duration-200"
+              />
+            </div>
             {/* Download Text: Centered above badges */}
             <p className="text-white text-sm md:text-base lg:text-lg pl-3 font-semibold whitespace-nowrap">
               Download Manilla App
@@ -119,14 +126,6 @@ const NewHero = () => {
                 className="w-20 h-12 md:w-28 md:h-14  lg:w-44 hover:scale-105 transition-transform duration-200"
               />
             </div>
-          </div>
-
-          <div className="absolute  left-[14rem] top-[rem]">
-            <img
-              src="/hero/blockchain.png"
-              alt=""
-              className="w-20 h-12 md:w-28 md:h-14  lg:w-44 hover:scale-105 transition-transform duration-200"
-            />
           </div>
 
           <div className="absolute -bottom-[8rem] right-[23rem] w-[15rem] h-44">

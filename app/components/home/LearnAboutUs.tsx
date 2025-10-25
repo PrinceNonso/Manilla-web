@@ -23,7 +23,7 @@ const LearnAboutUs = () => {
 
   return (
     <section className="py-10 px-4 md:px-20">
-      <div className=" lg:pl-8 flex flex-col lg:flex-row items-center gap-10">
+      <div className=" lg:pl- flex flex-col lg:flex-row items-center gap-10">
         {/* === LEFT SECTION === */}
         <div className="space-y-4 flex-1">
           <Button variant="destructive" className="cursor-none ">
