@@ -20,7 +20,7 @@ const mediaPartnersLogos = [
 ];
 
 const WCMAMediaPartners = () => (
-  <section className=" md:px-8 mt-8 mx-auto">
+  <section className=" md:px-20 mt-8 mx-auto">
     <div className="relative bg-dark-1 h-[450px] md:h-[480px] lg:h-[600px] overflow-hidden rounded-t-4xl flex flex-col items-center justify-center pt-20 ">
       {/* Decorative stroke inside the same section */}
       <Image

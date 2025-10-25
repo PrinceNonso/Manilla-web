@@ -7,7 +7,7 @@ import ServicesCarousel from "../ui/servicesComps/mobileComp";
 
 const OurServices = () => {
   return (
-    <section className="py-14 px-4 md:px-8">
+    <section className="py-14 px-4 md:px-20">
       {/* Header Section */}
       <div className="text-center space-y-6 flex flex-col items-center">
         {/* Banner Image with Overlay */}

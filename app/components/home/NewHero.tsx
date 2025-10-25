@@ -6,12 +6,13 @@ import { LiaArrowRightSolid } from "react-icons/lia";
 import { CurvedArrow } from "@/public/svg";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import HeroMarquee from "../ui/HeroMarquee";
 
 const NewHero = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h- w-full overflow-hidden space-y-4 pt-8">
       <div className="absolute inset-0">
         <Image
           src="/hero/heroGradient.jpg"
@@ -20,7 +21,7 @@ const NewHero = () => {
           priority
           onLoad={() => setLoaded(true)}
           className={`object-cover transition-opacity duration-1000 ease-in-out ${
-            loaded ? "opacity-100" : "opacity-70"
+            loaded ? "opacity-100" : "opacity-80"
           }`}
           sizes="100vw"
         />
@@ -28,7 +29,7 @@ const NewHero = () => {
         <div className="absolute inset-0 bg-black/30" />
       </div>
       {/* Hero Content - Add py-8 here for spacing without affecting background */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center space-y-4 ">
+      <div className="relative z-10 flex flex-col items-center justify-center mt-4 text-center space-y-4 ">
         <h1 className="text-white text-2xl md:text-4xl font-bold">
           Redefining How You Pay, <br /> Travel, and Connect.
         </h1>
@@ -37,23 +38,36 @@ const NewHero = () => {
           America — fast, secure, and affordable with{" "}
           <span className="text-white font-bold">Manilla Finance</span>.
         </p>
-        <Button variant="whiteBtn" size="lg" className="!h-11 !px-6">
-          Get started Now
-          <LiaArrowRightSolid />
+        <Button
+          variant="whiteBtn"
+          size="lg"
+          className="!h-11 !px-6 relative overflow-hidden group transition-all duration-300 flex items-center gap-2 
+             bg-white text-gray-900 hover:text-white hover:font-bold shadow-md">
+          {/* Background slide effect */}
+          <span className="absolute inset-0 bg-blue-1/70 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 rounded-md z-0"></span>
+
+          {/* Button content */}
+          <span className="relative z-10 flex items-center gap-2">
+            Get started Now
+            <LiaArrowRightSolid className="transition-transform duration-500 group-hover:translate-x-2 group-hover:rotate-12" />
+          </span>
         </Button>
+
         {/* Decorative Arrow */}
         {/* <div className="absolute bottom-[8rem] right-8 md:right-[34rem]">
           <CurvedArrow />
         </div> */}
         {/* Hero Girl Image with Responsive Overlays */}
-        <div className="relative  w-64 h-64 lg:w-80 lg:h-80">
+
+        <div className="relative  w-64 h-64 lg:w-[22rem] lg:h-90 my-4">
           <Image
             src="/hero/hero-girl.png"
             alt="Hero girl"
             fill
             className="object-cover rounded-full" // Added rounded-full for a polished look
           />
-          <div className="absolute -bottom-4 left-[3rem] md:-bottom-10 md:left-18">
+
+          <div className="absolute -bottom-4 md:-bottom-7 left-[3rem] lg:-bottom-8 lg:left-24">
             <img
               src="/hero/blurry.png"
               alt=""
@@ -90,7 +104,23 @@ const NewHero = () => {
               />
             </div>
           </div>
+
+          <div className="absolute -bottom-[8rem] right-[23rem] w-[15rem] h-44">
+            <img src="/hero/activeUsers.png" alt="" />
+          </div>
         </div>
+
+        <div className="relative bottom-0  w-full h-20 md:h-40">
+          <Image
+            src={"/hero/heroslide.png"}
+            alt="hero "
+            fill
+            className="object-co"
+          />
+        </div>
+        {/* <div className="">
+          <HeroMarquee />
+        </div> */}
       </div>
     </section>
   );

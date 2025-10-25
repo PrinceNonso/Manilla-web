@@ -29,7 +29,7 @@ const WhyChooseManilla = () => {
   ];
   return (
     <section>
-      <div className="px-4 md:px-8 flex flex-col">
+      <div className="px-4 md:px-20 flex flex-col">
         <div className="mt-14 mb-10 flex flex-col items-center space-y-4 ">
           <div className="text-center flex flex-col items-center">
             <h1 className=" text-2xl md:text-4xl font-bold text-center text-dark-1">
@@ -59,7 +59,7 @@ const WhyChooseManilla = () => {
             />
           </div>
 
-          <div className="lg:w-[55%] w-full bg-black flex flex-col items-cente justify-center  p-4 rounded-xl gap-4">
+          <div className="lg:w-[55%] w-full bg-black flex flex-col items-cente justify-center  p-2 rounded-xl gap-4">
             <div className="text-white text-2xl font-semibold text-cente  flex gap-4">
               <Secle />
               <h2 className="text-base md:text-2xl">

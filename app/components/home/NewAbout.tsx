@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const NewAbout = () => {
   return (
-    <section className="mx-auto flex flex-col items-cente justify-center bg-[#FFFFFF] px-4 md:px-8 ">
+    <section className="mx-auto flex flex-col items-cente justify-center bg-[#FFFFFF] px-4 md:px-20 ">
       <div className="flex flex-col-reverse gap-4 items-center text-center justify-center mt-8">
         <div className="rounded-full  bg-[#E1E1E129] w-max p-2 px-6 border border-gray-500 text-nowrap">
           <span>About Manilla Pay</span>
@@ -60,7 +60,7 @@ const NewAbout = () => {
           </div>
         </div>
 
-        <div className="relative w-full h-[44rem]">
+        <div className="relative w-full h-[40rem]">
           <Image
             src="/about/aboutImg.jpg"
             alt="About"
