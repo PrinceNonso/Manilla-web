@@ -29,7 +29,7 @@ const NewHero = () => {
         <div className="absolute inset-0 bg-black/30" />
       </div>
       {/* Hero Content - Add py-8 here for spacing without affecting background */}
-      <div className="relative z-10 flex flex-col items-center justify-center mt-4 text-center space-y-4 ">
+      <div className="relative z-10 flex flex-col items-center justify-center mt- text-center space-y-4 ">
         <h1 className="text-white text-2xl md:text-4xl font-bold">
           Redefining How You Pay, <br /> Travel, and Connect.
         </h1>
@@ -67,7 +67,7 @@ const NewHero = () => {
             className="object-cover rounded-full" // Added rounded-full for a polished look
           />
 
-          <div className="absolute -bottom-4 md:-bottom-7 left-[3rem] lg:-bottom-8 lg:left-24">
+          <div className="absolute -bottom-4 md:-bottom-7 left-[3rem] lg:-bottom-8 lg:left-20">
             <img
               src="/hero/blurry.png"
               alt=""
