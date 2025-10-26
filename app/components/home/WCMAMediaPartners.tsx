@@ -96,7 +96,7 @@ const WCMAMediaPartners = () => (
     </div>
 
     {/* Optional background for lower section */}
-    <div className="relative w-full  overflow-hidde py-4 md:py-8 !px-4 mx-auto flex flex-col items-center">
+    <div className="relative w-full  overflow-hidde py-4 md:py-8 !px-4 mx-auto flex flex-col items-center h-[]">
       <Image
         src="/wcma/bgInt.png"
         alt="Hero Background"
