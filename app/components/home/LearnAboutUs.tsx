@@ -22,11 +22,11 @@ const LearnAboutUs = () => {
   ];
 
   return (
-    <section className="py-10">
-      <div className=" lg:pl-8 flex flex-col lg:flex-row items-center gap-10">
+    <section className="py-10 px-4 md:px-20">
+      <div className=" lg:pl- flex flex-col lg:flex-row items-center gap-10">
         {/* === LEFT SECTION === */}
         <div className="space-y-4 flex-1">
-          <Button variant="destructive">
+          <Button variant="destructive" className="cursor-none ">
             <span className="text-secondary">Learn About </span> Our Products
           </Button>
 
@@ -53,7 +53,7 @@ const LearnAboutUs = () => {
         </div>
 
         {/* === RIGHT SECTION: CAROUSEL === */}
-        <div className=" w-full bg-brand-lighter lg:max-w-[65rem] lg:h-[90vh] py-4 px-2 lg:rounded-l-2xl">
+        <div className=" w-full bg-brand-lighter lg:max-w-[60rem] py-4 px-2 lg:rounded-l-2xl">
           <Carousel
             className="w-full"
             opts={{
@@ -70,7 +70,7 @@ const LearnAboutUs = () => {
                 <CarouselItem
                   key={index}
                   className="flex justify-center md:basis-1/2 lg:basis-1/3 h-full ">
-                  <div className="relative w-full md:w-full h-[36rem] ">
+                  <div className="relative w-full md:w-full h-[32rem] ">
                     <Image
                       src={src}
                       alt={`Manilla product ${index + 1}`}

@@ -4,26 +4,13 @@ import Image from "next/image";
 import React from "react";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { Button } from "../ui/button";
-import BlogCard from "../blogCard";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselDots,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../ui/carousel";
-import { FaSearch } from "react-icons/fa";
-import NotchedCard from "../ui/ClippedComp";
-import BlogCarousel from "../ui/blogCarousel";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Don't forget the CSS
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import BlogsComp from "../ui/BlogComp";
+import BlogsComp from "../ui/blog/BlogComp";
+import BlogMobile from "../ui/blog/blogMobile";
 
 const Blogs = () => {
   return (
@@ -60,6 +47,7 @@ const Blogs = () => {
         <Button variant={"destructive"}>Learn More Daily</Button>
 
         <BlogsComp />
+        <BlogMobile />
       </div>
     </section>
   );

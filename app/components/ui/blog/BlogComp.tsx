@@ -3,11 +3,12 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import NotchedCard from "./ClippedComp";
-import BlogCard from "../blogCard";
+
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Swiper as SwiperType } from "swiper";
+import BlogCard from "../../blogCard";
+import NotchedCard from "../ClippedComp";
 
 export default function BlogsComp() {
   const swiperInstanceRef = useRef<SwiperType | null>(null);
@@ -25,20 +26,20 @@ export default function BlogsComp() {
       title: "The Future of Digital Payments",
     },
     {
-      imageSrc: "/blog/blog3.jpg",
+      imageSrc: "/blog/blog1.jpg",
       date: "July 7, 2024",
       title: "Building Cross-Border Payment Solutions",
     },
     {
-      imageSrc: "/blog/blog4.jpg",
+      imageSrc: "/blog/blog2.jpg",
       date: "September 22, 2024",
       title: "Crypto Simplified for Global Transactions",
     },
   ];
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row gap-6 items-center justify-center mt-6 px-4">
-      <div className="w-full lg:max-w-4xl relative">
+    <div className=" flex flex-col-revers flex-row gap-6 items-center justify-center mt-6 px-4">
+      <div className="w-full lg:max-w-4xl relative hidden lg:block">
         <Swiper
           modules={[Navigation, Pagination]}
           loop={true}
@@ -68,7 +69,7 @@ export default function BlogsComp() {
           ))}
         </Swiper>
 
-        <div className="flex items-center justify-end gap-3 mt-4">
+        <div className=" flex items-center justify-end gap-3 mt-4">
           {/* Dots - shifted up slightly to overlap nav buttons */}
           <div
             ref={paginationRef}
@@ -76,19 +77,20 @@ export default function BlogsComp() {
           {/* Navigation Buttons */}
           <button
             onClick={() => swiperInstanceRef.current?.slidePrev()}
-            className="w-10 h-10 rounded-full bg-dark-1 hover:bg-bleu-900 cursor-pointer flex items-center justify-center transition-colors"
+            className="group w-8 h-8 rounded-full bg-dark-1 hover:bg-bleu-900 cursor-pointer flex items-center justify-center transition-colors duration-300 ease-in hover:scale-105 "
             aria-label="Previous Slide">
-            <ChevronLeft className="w-5 h-5 text-white" />
+            <ChevronLeft className="w-5 h-5 text-white group-hover:text-secondary transition-all duration-300 ease-in-out" />
           </button>
+
           <button
             onClick={() => swiperInstanceRef.current?.slideNext()}
-            className="w-10 h-10 rounded-full !bg-dark-1 hover:bg-bleu-900 flex items-center cursor-pointer justify-center transition-colors"
+            className="group w-8 h-8 rounded-full bg-dark-1 hover:bg-bleu-900 cursor-pointer flex items-center justify-center transition-colors duration-300 ease-in hover:scale-105 "
             aria-label="Next Slide">
-            <ChevronRight className="w-5 h-5 text-white" />
+            <ChevronRight className="w-5 h-5 text-white group-hover:text-secondary transition-all duration-300 ease-in-out" />
           </button>
         </div>
       </div>
-      <div className="w-full lg:w-auto flex justify-center">
+      <div className="w-full lg:w-auto flex justify-center ">
         <NotchedCard />
       </div>
       {/* Custom pagination dot styles */}

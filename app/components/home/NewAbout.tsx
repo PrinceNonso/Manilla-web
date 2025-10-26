@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const NewAbout = () => {
   return (
-    <section className="mx-auto flex flex-col items-cente justify-center bg-[#FFFFFF] px-4 md:px-8 ">
+    <section className="mx-auto flex flex-col items-cente justify-center bg-[#FFFFFF] px-4 md:px-20 ">
       <div className="flex flex-col-reverse gap-4 items-center text-center justify-center mt-8">
         <div className="rounded-full  bg-[#E1E1E129] w-max p-2 px-6 border border-gray-500 text-nowrap">
           <span>About Manilla Pay</span>
@@ -39,7 +39,7 @@ const NewAbout = () => {
           </div>
           <div className="space-y-6">
             <div className="bg-[#E2E2E242] rounded-xl py-10 px-6">
-              <p className="text-base md:text-xl font-medium max-w-[62rem] leading-8">
+              <p className="text-base    font-medium max-w-[62rem] leading-8">
                 From bank queues and failed transfers to delayed utility credits
                 and cross-border headaches, the system isn’t built for speed or
                 convenience. That’s why we created Manilla Pay: to merge the
@@ -47,7 +47,7 @@ const NewAbout = () => {
                 and freedom of crypto.
               </p>
             </div>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col w-full sm:flex-row gap-4">
               <Button variant={"ghost"} className="text-base  md:px-8">
                 Click to learn more about us
               </Button>
@@ -60,7 +60,7 @@ const NewAbout = () => {
           </div>
         </div>
 
-        <div className="relative w-full h-[44rem]">
+        <div className="relative w-full h-[40rem]">
           <Image
             src="/about/aboutImg.jpg"
             alt="About"

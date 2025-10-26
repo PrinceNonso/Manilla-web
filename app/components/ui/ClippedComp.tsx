@@ -55,7 +55,7 @@ export default function NotchedCard() {
 
       {/* All Blogs Button - Positioned in the notch */}
       <button
-        className="absolute left- bg-yellow-400 hover:bg-yellow-500 transition-colors text-gray-900 font-semibold px-8 py-5 rounded-2xl flex items-center gap-3 shadow-lg"
+        className="absolute bg-yellow-400 hover:bg-yellow-500 transition-colors text-gray-900 font-semibold px-6 sm:px-20  md:px-8 py-5 rounded-2xl flex items-center gap-3 shadow-lg"
         style={{
           bottom: "8px",
         }}>
