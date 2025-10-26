@@ -89,28 +89,40 @@ const NewHero = () => {
             <img
               src="/hero/blockchain.png"
               alt=""
-              className="w-28 h-10 md:w-28 md:h-14  absolute -left-[-12rem] top-4 md:-left-[9rem] lg:hidden"
+              className="w-28 h-10 md:w-32 md:h-14  absolute -left-[-12rem] top-4 md:-left-[-13rem] lg:hidden"
             />
           </div>
           <div className="absolute  -left-[4rem] top-[2rem] lg:-left-[11rem] lg:top-[6rem]">
             <img
               src="/hero/payment.png"
               alt=""
-              className="w-28 h-10 md:w-28 md:h-14  lg:w-44 hover:scale-105 transition-transform duration-200"
+              className="w-28 h-10 md:w-32 md:h-14  lg:w-44 hover:scale-105 transition-transform duration-200"
             />
           </div>
 
-          <div className="">
-            <img src="/subtract" alt="" className="" />
+          <div className="flex">
+            <img
+              src="/subtract.png"
+              alt=""
+              className="w-32 h-10 md:w-28 md:h-14  absolute -left-[-10rem] bottom-0 md:-left-[rem] lg:hidden"
+            />
+            <p className="text-white absolute -left-[-10rem] bottom-2 md:-left-[] lg:hidden text-xs">
+              Manilla Pay App <span className="text-secondary">Download</span>
+            </p>
+            <img
+              src="/play-apple.png"
+              alt=""
+              className="w-24 h-10 md:w-28 md:h-14  absolute -left-[-16rem] bottom-0 md:-left-[] lg:hidden"
+            />
           </div>
 
           {/* Overlays Container: Positioned below the image, centered and responsive */}
           <div className="absolute bottom-[-1rem] lg:left-[22rem] transform translate-x-1/2 flex flex-col items-center space-y-2 z-20">
-            <div className="absolute left-[15rem] md:-left-[9rem] lg:-left-[7rem] xl:-left-[5rem] lg:top-[-18rem] xl:top-[-14rem]">
+            <div className="absolute hidden lg:flex lg:-left-[7rem] xl:-left-[5rem] lg:top-[-18rem] xl:top-[-14rem]">
               <img
                 src="/hero/blockchain.png"
                 alt=""
-                className="w-20 h-12 md:w-28 md:h-14  lg:w-48 hover:scale-105 transition-transform duration-200"
+                className="w-20 h-12 md:w-32 md:h-14  lg:w-48 hover:scale-105 transition-transform duration-200"
               />
             </div>
             {/* Download Text: Centered above badges */}
